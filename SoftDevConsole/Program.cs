@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Avo.SoftDev.Domain;
+using Avo.SoftDev.Persistance;
+using System;
 
 namespace Avo.SoftDev.SoftDevConcole
 {
@@ -6,6 +8,7 @@ namespace Avo.SoftDev.SoftDevConcole
     {
         static void Main(string[] args)
         {
+            Person person;
             Console.WriteLine("Hello World!");
         }
     }
