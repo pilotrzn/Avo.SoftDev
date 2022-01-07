@@ -10,5 +10,9 @@ namespace Avo.SoftDev.Domain
         /// Количество рабочих часов в месяце
         /// </summary>
         public const byte WorkHoursInMonth = 160;
+        /// <summary>
+        /// Количество часов в день
+        /// </summary>
+        public const byte WorkHoursInDay = 8;
     }
 }
