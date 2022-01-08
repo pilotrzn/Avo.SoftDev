@@ -8,7 +8,6 @@ namespace Avo.SoftDev.Domain
     {
         public Employee(string name, List<TimeRecord> timeRecords) : base(name, 120000,timeRecords)
         {
-
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Avo.SoftDev.Persistance
 {
-    internal class MemoryRepository : IRepository
+    public class MemoryRepository : IRepository
     {
         #region FakeData
         private List<TimeRecord> employees = new List<TimeRecord>()
@@ -46,12 +46,10 @@ namespace Avo.SoftDev.Persistance
         {
             return FakeData.employees;
         }
-
         public List<TimeRecord> Freelancers()
         {
             return FakeData.freelancers;
         }
-
         public List<TimeRecord> Managers()
         {
             return FakeData.managers;
@@ -86,7 +84,7 @@ namespace Avo.SoftDev.Persistance
             {
                 to = DateTime.Now;
             }
-            return records.Where(x => from.Value >= x.Date && x.Date >= to.Value).ToList();
+            return records.Where(x =>  x.Date >= from.Value && x.Date <= to.Value).ToList();
         }
 
         public List<TimeRecord> ReportGetByUser(string name, UserRole userRole, DateTime? from = null, DateTime? to = null)

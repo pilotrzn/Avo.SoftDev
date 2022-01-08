@@ -18,14 +18,6 @@ namespace Avo.SoftDev.Domain
             foreach (var timerecord in timeRecords)
             {
                 totalPay += timerecord.Hours <= 8 ? timerecord.Hours * payPerHour : Settings.WorkHoursInDay * payPerHour + bonusPerDay;
-                //if (timerecord.Hours <= 8)
-                //{
-                //    totalPay += timerecord.Hours * payPerHour;
-                //}
-                //else
-                //{
-                //    totalPay += Settings.WorkHoursInDay * payPerHour + bonusPerDay;   
-                //}
             }
             TotalPay = totalPay;
         } 

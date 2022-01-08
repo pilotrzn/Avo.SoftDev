@@ -7,8 +7,7 @@ using System.Text;
 
 namespace Avo.SoftDev.Persistance
 {
-    class FileReposirory
+    class FileRepository
     {
-
     }
 }
