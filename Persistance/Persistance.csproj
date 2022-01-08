@@ -6,4 +6,8 @@
     <AssemblyName>Avo.SoftDev.Persistance</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
 </Project>
