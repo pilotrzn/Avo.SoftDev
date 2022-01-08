@@ -44,17 +44,21 @@ namespace Avo.SoftDev.Persistance
 
         public List<TimeRecord> Employees()
         {
-            return employees;
+            return FakeData.employees;
         }
 
         public List<TimeRecord> Freelancers()
         {
-            return freelancers;
+            return FakeData.freelancers;
         }
 
         public List<TimeRecord> Managers()
         {
-            return managers;
+            return FakeData.managers;
+        }
+        public List<User> Users()
+        {
+            return users;
         }
 
         public List<TimeRecord> ReportGet(UserRole userRole, DateTime? from = null, DateTime? to = null)
@@ -126,11 +130,6 @@ namespace Avo.SoftDev.Persistance
         public User UserGet(string name)
         {
             return Users().FirstOrDefault(x => x.Name == name);
-        }
-
-        public List<User> Users()
-        {
-            return users;
         }
     }
 }
